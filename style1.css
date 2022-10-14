@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+}
+.form-1, .form-2, .form-3 h1{
+    color: #0254b7;
+}
+.form-1, .form-2, .form-3{
+    padding-top: 15%;
+    margin-left: 30%;
+}
+h3{
+    margin-top: 30px;
+}
+.input-1{
+    padding: 10px;
+    width: 20%;
+    border: 3px solid #bbb;
+    border-radius: 30px;
+    outline: none;
+    margin-right: 30px;
+}
+.input-1:focus{
+    border: 3px solid #0254b7;
+    color: blue;
+}
+.input-2{
+    padding: 10px;
+    margin-top: 15px;
+    width: 50%;
+    border: 3px solid #bbb;
+    border-radius: 30px;
+    outline: none;
+    margin-right: 30px;
+}
+.input-2:focus{
+    border: 3px solid #0254b7;
+    color: blue;
+}
+.conti-1, .conti-2{
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    background-color: #0254b7;
+    color: white;
+    border: none;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.error{
+    border-bottom: 1px solid red;
+}
+.progress-bar{
+    position: absolute;
+    bottom: 500px;
+    left: 30%;
+}
+.bot-icon-1, .bot-icon-2, .bot-icon-3{
+    font-size: 35px!important;
+    color:#c7c7c7;
+}
+.step-1{
+    position: relative;
+    float: left;
+    width: 250px;
+}
+.line-1, .line-2{
+    height: 2px;
+    width: 200px;
+    background-color: #c7c7c7;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+.form-2, .form-3{
+    display: none;
+}
+.check{
+    zoom:1.8;
+    position: absolute;
+}
+label{
+    margin-left: 5px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+@media (max-width: 947px){
+.form-1, .form-2, .form-3{
+    margin-left: 20%;
+}
+.bot-icon-1, .bot-icon-2, .bot-icon-3{
+    font-size: 30px!important;
+}
+.step-1{
+    width: 170px;
+}
+.line-1, .line-2{
+    width: 120px;
+    background-color: #c7c7c7;
+}
+}
+@media (max-width: 500px){
+.form-1, .form-2, .form-3{
+    margin-left: 15%;
+}
+.bot-icon-1, .bot-icon-2, .bot-icon-3{
+    font-size: 25px!important;
+}
+.step-1{
+    width: 130px;
+}
+.line-1, .line-2{
+    width: 80px;
+    background-color: #c7c7c7;
+}
+.progress-bar{
+    left: 15%;
+    bottom: 550px;
+}
+}
