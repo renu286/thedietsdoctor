@@ -103,6 +103,7 @@
     font-size: 32px;
     margin: 5px 0;
     text-align: justify;
+    word-spacing: -5px;
 }
 .home .home-content .txt3 .typing{
     color: black;
