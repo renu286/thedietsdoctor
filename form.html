@@ -8,7 +8,7 @@
 <body>
 
 
-	<form class="container" action="https://formsubmit.co/rbgarg4881@gmail.com" method="POST">
+	<form class="container" id="container" action="https://formsubmit.co/rbgarg4881@gmail.com" method="POST">
 		<input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://renu286.github.io/thedietsdoctor/thankspage.html">
         <div class="form-1">
@@ -72,5 +72,19 @@
 	    </ul>
 		<button type="submit">Continue &nbsp;<i class="fa fa-angle-right"></i></button></div>
 	</form>
+	<script type="text/javascript">
+		var form = document.grtElementById('container');
+		var values = [];
+		form.addEventListener('submit',function(e){
+           e.preventDefault();
+           var checkboxes = document.grtElementsByName('Food&nbsp;Intake');
+           for(var = i; i < checkboxes.length; i++){
+           	if(checkboxes[i].checked == true){
+           		values.push(checkboxes[i].value);
+           	}
+           }
+           alert('The values(s):' + values.toString());
+		});
+	</script>
 </body>
 </html>
