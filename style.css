@@ -630,7 +630,8 @@ section .title{
         padding: 0 23px;
     }
     .home .max-width{
-        height: 78vh; 
+        height: 78vh;
+        position: 0; 
     }
     .home .home-content .txt1{
         font-size: 20px;
@@ -651,8 +652,9 @@ section .title{
 
 @media (max-width: 500px) {
     .home .max-width{
-        height: 78vh; 
-        margin-top: 20px;
+        height: 75vh; 
+        margin-top: 50px;
+        padding: 35px;
     }
     .home .home-content .txt2{
         font-size: 30px;
