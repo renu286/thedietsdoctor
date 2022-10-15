@@ -427,6 +427,10 @@ section .title{
 .target .target-content .column{
     width: 50%;
 }
+.target .target-content .left,
+.target .target-content .right{
+    padding: 10px;
+}
 .target .target-content .left .text,
 .target .target-content .right .text{
     font-size: 30px;
