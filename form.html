@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,28 +65,24 @@
         <input type="checkbox" class="check" name="Medical&nbsp;History" value="Depression"><label>Depression</label>
         <input type="checkbox" class="check" name="Medical&nbsp;History" value="Other"><label>Other</label></li>
         <h3>&nbsp; Food Intake</h3>
-		<li><input type="checkbox" class="check" name="Food&nbsp;Intake" value="Once&nbsp;a&nbsp;day"><label>Once a day</label>
-		<input type="checkbox" class="check" name="Food&nbsp;Intake" value="Twice&nbsp;a&nbsp;day"><label>Twice a day</label><br><br>
-	    <input type="checkbox" class="check" name="Food&nbsp;Intake" value="Thrice&nbsp;a&nbsp;day"><label>Thrice a day</label>
-	    <input type="checkbox" class="check" name="Food&nbsp;Intake" value="3-4&nbsp;meal"><label>3-4 meal</label><br><br>
-		<input type="checkbox" class="check" name="Food&nbsp;Intake" value="4-5&nbsp;meal"><label>4-5 meal</label>
-		<input type="checkbox" class="check" name="Food&nbsp;Intake" value="5-6&nbsp;meal"><label>5-6 meal</label></li>
+		<li><input type="checkbox" class="check" name="food[]" value="Once&nbsp;a&nbsp;day"><label>Once a day</label>
+		<input type="checkbox" class="check" name="food[]" value="Twice&nbsp;a&nbsp;day"><label>Twice a day</label><br><br>
+	    <input type="checkbox" class="check" name="food[]" value="Thrice&nbsp;a&nbsp;day"><label>Thrice a day</label>
+	    <input type="checkbox" class="check" name="food[]" value="3-4&nbsp;meal"><label>3-4 meal</label><br><br>
+		<input type="checkbox" class="check" name="food[]" value="4-5&nbsp;meal"><label>4-5 meal</label>
+		<input type="checkbox" class="check" name="food[]" value="5-6&nbsp;meal"><label>5-6 meal</label></li>
 	    </ul>
 		<button type="submit">Continue &nbsp;<i class="fa fa-angle-right"></i></button></div>
 	</form>
-	<script type="text/javascript">
-		var form = document.grtElementById('container');
-		var values = [];
-		form.addEventListener('submit',function(e){
-           e.preventDefault();
-           var checkboxes = document.grtElementsByName('Food&nbsp;Intake');
-           for(var = i; i < checkboxes.length; i++){
-           	if(checkboxes[i].checked == true){
-           		values.push(checkboxes[i].value);
-           	}
-           }
-           alert('The values(s):' + values.toString());
-		});
-	</script>
+	<?php>
+	if(isset($_POST['submit'])){
+	if(!empty($_POST['food'])){
+	$selected=array();
+	foreach($_POST['food'] as $key=>$value){
+	$selected[]=$value;
+}
+}
+}
+	?>
 </body>
 </html>
